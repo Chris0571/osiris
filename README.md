@@ -178,7 +178,7 @@ Open [http://localhost:3000](http://localhost:3000)
 ### Docker / Self-Hosting
 
 ```bash
-git clone https://github.com/simplifaisoul/osiris.git
+git clone https://github.com/Chris0571/osiris.git
 cd osiris
 cp .env.template .env     # optional — configure keys / port
 docker compose up -d
@@ -193,8 +193,8 @@ CasaOS and API-key guide.
 **Prebuilt image (GHCR)** — skip the build and pull it directly:
 
 ```bash
-docker pull ghcr.io/simplifaisoul/osiris:latest
-docker run -d -p 3000:3000 --env-file .env ghcr.io/simplifaisoul/osiris:latest
+docker pull ghcr.io/Chris0571/osiris:latest
+docker run -d -p 3000:3000 --env-file .env ghcr.io/Chris0571/osiris:latest
 ```
 
 **Custom port** — the container always listens on `3000`; set `OSIRIS_PORT` in
